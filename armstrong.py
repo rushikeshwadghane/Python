@@ -1,36 +1,25 @@
 
+num = input("enter num")
+l = len(list(num))
+print(l)
 
-def CalculatePower(x,y):
-    power = 1
-    for i in range(1,y+1):
-        power = power*x
-    print(power)
-    return power
-
-def Armstrong(n):
-    temp= n
-    temp2 = n
-    cnt = 0
-    while(temp!=0):
-        temp = temp/10
-        cnt += 1
-    
-    Sum = 0
-    while(n!=0):
-        digit = n%10
-        power = CalculatePower(digit,cnt)
-        n = n/10
-        Sum = Sum+power  
+class Solution:
+    def armstrong(self, num):
+        sum = 0
+        temp = num
+        while temp > 0:
+            digit = temp % 10
+            sum += digit ** l
+            temp //= 10
+        if num == sum:
+            return True
+        else:
+            return False
         
-    if(Sum == temp2):
-        return True
-    else:
-        return False          
- 
-print("Enter Value")
-x =int(input())
-ret =  Armstrong(x)
-if(ret==True):
-    print("No is Armstrong")
+
+res = Solution()
+result = res.armstrong(int(num))
+if result:
+    print(num, "is armstrong")  
 else:
-    print("not Armstrong")        
+    print(num, "is not armstrong")

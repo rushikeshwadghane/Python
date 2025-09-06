@@ -1,20 +1,15 @@
-class base:
-    def __init__(self):
-        print("inside base")
-      
-    def inBase(self,y):
-        print(y)
-               
-class Derived:
-    def inBase(self,x):
-        print(x ,"inside base")
+class Person:
+    def __init__(self, name):
+        self.name = name
     
-class demo(Derived ,base):
-    pass
+    def speak(self):
+        print(f"My name is {self.name}")
 
+class Student(Person):   # Student inherits Person
+    def study(self):
+        print(f"{self.name} is studying")
 
-obj = demo()
-
-obj.inBase(20)    
-
-        
+# Using classes
+s = Student("Rushikesh")
+s.speak()   # inherited from Person
+s.study()   # own method
