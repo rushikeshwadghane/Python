@@ -3,12 +3,13 @@ def findDuplicates(arr):
     result = []
     for num in arr:
         freq[num] = freq.get(num, 0) + 1
-    for k, v in freq.items():
-        if v == 2:
-            result.append(k)
+
+        if freq[num] == 2:
+            result.append(num)
+
     return result
 
 
 
-res = findDuplicates([5, 15, 2, 7, 8, 2, 3, 1])
+res = findDuplicates([5, 15, 2, 7, 8, 2,1,5, 3, 1,5,5])
 print(res)

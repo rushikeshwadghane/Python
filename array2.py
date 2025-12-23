@@ -3,15 +3,6 @@ arr = [2,3,5,7,2,5,7,6,9,11,12,5,7,9,1,-1,-2]
 target  =  10
 
 #proble statement -  finde index of pair which element sum = traget
-# seen  = {}
-# for i,n in enumerate(arr):
-#     com = target - n
-#     if com in seen:
-#         print(seen)
-#         print(com,n)
-#         break
-#     seen[i] = n
-
 
 n  = len(arr)
 result  = []

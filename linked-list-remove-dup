@@ -1,0 +1,22 @@
+
+def remove_dup_in_sorted_list(head):
+    curr = head
+    while curr:
+        if curr.next == curr.next.next:
+            curr.next = curr.next.next
+        else:
+            curr = curr.next
+    return head
+
+def remove_dup_from_unsorted_list(head):
+    dup = set()
+    curr = head
+    prev = None
+    while curr:
+        if curr.data in dup:
+            prev.next = curr.next
+        else:
+            dup.add(curr.data)
+            prev = curr
+        curr = curr.next
+

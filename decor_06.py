@@ -1,18 +1,17 @@
 
-def decorator(func):
-
-    def wrapper_fun(a,b):
-        print(a,b)
-        print('in dec')
-
-        val = func(a,b)
-        return val
+def my_decorator(fun):
+    def wrapper_fun():
+        print('Inside Decorator')
+        fun()
+        print("After function call")
     return wrapper_fun
     
-@decorator
-def sum_of_val(a,b):
-    print(a,b)
-    return a + b
+
+    
+@my_decorator
+def say_hello():
+    print('Hello WOrld')
+    print('Hello WOrld')
 
 
-print('Sum ------>>', sum_of_val(5,7))
+say_hello()
