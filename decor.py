@@ -1,21 +1,14 @@
 
-
-# def decorator(fun):
-#     def wrapper():
-#         print('before function')
-#         fun()
-#         print('after fun')
-#     return wrapper
-
-# @decorator
-# def say_hello():
-#     print('hello world')
+def decorator(fun):
+    def wrapp():
+        fun()
+        
+    return wrapp
 
 
-# say_hello()
-    
-
-
+@decorator
+def demo():
+    print('check decoraor')
 
 
 
