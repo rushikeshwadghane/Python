@@ -1,0 +1,36 @@
+
+# Design Patterns
+
+"""
+1) Creational Patterns   - How to create ojbect easily
+2) Structural Patterns   - How to organize object
+3) Bahavioral Patterns   - How Object Interact
+
+"""
+
+' ------------------------------------------------------------------------------------------------------
+
+
+"""
+>> Creational Patterns:
+        These patterns help you to create object in a way that's flexible and reusable
+
+    1) Singleton:
+        Only one object of a class is created
+        
+
+"""
+
+' ------------------------------------------------------------------------------------------------------
+
+
+> Structural Pattern:
+    These patterns help you compose objects to form larger structures.
+
+"""
+
+
+
+
+
+"""
