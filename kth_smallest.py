@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `kth_smallest`, `kth_smallest_using_sort`."""
+
 
 
 def kth_smallest(k:int,arr:list):
@@ -16,7 +18,7 @@ def kth_smallest_using_sort(k:int,arr:list):
     l = len(arr)
     if l <= 1:
         return arr
-    
+
     mid = l//2
     i = j = 0
     sor_a = []
@@ -26,7 +28,7 @@ def kth_smallest_using_sort(k:int,arr:list):
     print(right)
     while i < len(left) and j < len(right):
         print(left[i],right[j],i,j)
-        if left[i] <= right[j]:  
+        if left[i] <= right[j]:
             sor_a.append(left[i])
             i+= 1
         else:

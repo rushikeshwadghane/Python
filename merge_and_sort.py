@@ -1,10 +1,12 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 
 class Solution:
     def merge_and_sort(self, list1, list2):
         merged_list = set(list1 + list2)
         new = sorted(list(merged_list))
         return new  # remove duplicates and return sorted list
-    
+
 
 object = Solution()
 list1 = [27, 77, 12, 7, 18]

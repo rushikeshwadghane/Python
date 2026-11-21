@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `count_digit`."""
+
 
 def count_digit(n):
     c = 0

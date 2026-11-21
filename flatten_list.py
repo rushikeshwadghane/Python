@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `flatten_list`."""
+
 arr = [1,2,3,[3,5,[5,6]],6,7,[9]]
 
 def flatten_list(arr:list):
@@ -10,5 +12,3 @@ def flatten_list(arr:list):
     return res
 
 print(flatten_list(arr))
-
-

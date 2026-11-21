@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `f`."""
+
 
 def f(n,sum):
     print(sum)

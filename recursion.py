@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `flatten`."""
+
 def flatten(nested_list):
     """Flattens a nested list into a single list of values.
 

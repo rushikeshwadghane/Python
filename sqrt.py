@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `mySqrt`."""
+
 
 def mySqrt(x:int):
     low  = 0
@@ -8,7 +10,7 @@ def mySqrt(x:int):
 
         if mid * mid == x:
             return mid
-        
+
         elif mid * mid < x:
             ans = mid
             low = mid + 1
@@ -17,4 +19,3 @@ def mySqrt(x:int):
             high = mid  - 1
 
     return ans
-

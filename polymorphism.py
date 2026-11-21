@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Parent`, `Child`, `MathOps`."""
+
 # Method Overriding
 
 class Parent:

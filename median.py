@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `median`."""
+
 def median(arr1, arr2):
     new_arr = arr1 + arr2
     new_arr.sort()

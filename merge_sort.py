@@ -1,11 +1,13 @@
+"""Practice example defining or demonstrating `merge_sort`."""
+
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr          # MUST return a list
-    
+
     mid = len(arr) // 2
     left  = merge_sort(arr[:mid])
     right = merge_sort(arr[mid:])
-    
+
     i = j = 0
     result = []
     print(left,'-------------')

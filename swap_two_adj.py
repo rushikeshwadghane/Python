@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 class Solution:
     def distinctAdjacentElement(self, arr):
         n = len(arr)

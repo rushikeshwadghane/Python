@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `getPairs`."""
+
 def getPairs(arr):
     res = set()
     seen = set()
@@ -7,7 +9,7 @@ def getPairs(arr):
             pair = (min(num, -num), max(num, -num))
             res.add(pair)
         seen.add(num)
-    
+
     return sorted(list(res))
 
 

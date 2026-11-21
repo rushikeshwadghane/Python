@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `isPowerofTwo`."""
+
 def isPowerofTwo(n):
     if n == 1:
         return True

@@ -1,3 +1,5 @@
+"""Practice example covering anagram group."""
+
 ip = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
 op =  [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
@@ -10,7 +12,4 @@ for i in ip:
     else:
         res[key] = [i]
 
-print(list(res.values()))
-
-
-
+print((res.values()))

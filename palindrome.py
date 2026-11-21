@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `pal`, `reverse_string`, `rev_str_rec`."""
+
 
 from functools import reduce
 
@@ -20,7 +22,7 @@ def rev_str_rec(s,i,j):
         return s
     else:
         nl = list(s)
-        nl[i],nl[j] = nl[j],nl[i] 
+        nl[i],nl[j] = nl[j],nl[i]
         i += 1
         j -= 1
         ns = "".join(nl)
@@ -31,4 +33,3 @@ def rev_str_rec(s,i,j):
 # print(reverse_string('abc'))
 s = "abc"
 print(rev_str_rec(s,0,len(s)-1))
-

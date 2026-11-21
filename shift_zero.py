@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `move_zero`."""
+
 
 nums = [0, 1, 0, 3, 12]
 

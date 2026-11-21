@@ -1,10 +1,10 @@
-def my_generator():
-    yield 1
-    yield 2
-    yield 3
+"""Practice example defining or demonstrating `my_gen`."""
 
-gen = my_generator()
 
-print(next(gen))  # 1
-print(next(gen))  # 2
-print(next(gen))  # 3
+
+def my_gen():
+    for i in range(1,11):
+        yield i
+
+obj = my_gen()
+print(list(obj))

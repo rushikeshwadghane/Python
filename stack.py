@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Stack`."""
+
 class Stack:
     def __init__(self):
         self.stack = []

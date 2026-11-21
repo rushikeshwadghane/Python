@@ -1,4 +1,6 @@
-def reverse_integer(x): 
+"""Practice example defining or demonstrating `reverse_integer`."""
+
+def reverse_integer(x):
     """
     Reverses the digits of an integer.
 
@@ -21,5 +23,5 @@ def reverse_integer(x):
 
 
 # Example usage
-num = -12345    
+num = -12345
 print(reverse_integer(num))  # Output: -54321

@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `check_anagram`."""
+
 from collections import Counter
 
 def check_anagram(str1,str2):
@@ -7,7 +9,7 @@ def check_anagram(str1,str2):
     print(ord(str1[0]))
     str1 =  str1.lower()
     str2 =  str2.lower()
-    
+
     return Counter(str1) == Counter(str2)
 
 print(check_anagram("Listen", "Silent"))  # True

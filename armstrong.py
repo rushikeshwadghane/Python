@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 
 num = input("enter num")
 l = len(list(num))
@@ -15,11 +17,11 @@ class Solution:
             return True
         else:
             return False
-        
+
 
 res = Solution()
 result = res.armstrong(int(num))
 if result:
-    print(num, "is armstrong")  
+    print(num, "is armstrong")
 else:
     print(num, "is not armstrong")

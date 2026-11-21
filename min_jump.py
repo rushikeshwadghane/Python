@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 class Solution:
     def minJumps(self, arr):
         n = len(arr)
@@ -39,7 +41,7 @@ class Solution:
                 steps = maxReach - i
 
         return -1
-        
+
 
 # Test
 obj = Solution()

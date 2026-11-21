@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `isHappy`."""
+
 def isHappy( n: int,seen= set()) -> bool:
     if n == 1:
         return True
@@ -5,7 +7,7 @@ def isHappy( n: int,seen= set()) -> bool:
         return False
     if n in seen:
         return False
-    num = 0    
+    num = 0
     seen.add(n)
     while n > 0:
         r = n % 10

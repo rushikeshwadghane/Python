@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 class Solution:
     def getSecondLargest(self, arr):
         if len(arr) <2:
@@ -7,10 +9,9 @@ class Solution:
             if n > f:
                 s = f
                 f = n
-            
+
             elif f > n > s:
                 s = n
 
-                
+
         return s
-                

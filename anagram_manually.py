@@ -1,9 +1,11 @@
+"""Practice example defining or demonstrating `check_anagram`, `check_ana`."""
+
 
 def check_anagram(str1,str2):
 
     if len(str1) != len(str2):
         return False
-    
+
     str1 = str1.lower()
     str2 = str2.lower()
 
@@ -19,20 +21,20 @@ def check_anagram(str1,str2):
     for n in count:
         if n != 0:
             return False
-            
+
     return True
 
 
 def check_ana(str1,str2):
         if len(str1) != len(str2):
             return False
-        
+
         str1 = str1.lower()
         str2 = str2.lower()
 
         ns1   = "".join(sorted(str1))
         ns2   = "".join(sorted(str2))
-        
+
         return ns1 == ns2
 
 # Example Usage
@@ -41,4 +43,4 @@ print(check_anagram("Hello", "World"))
 
 print('==================')
 print(check_ana("Listen", "Silent"))  # True
-print(check_ana("Hello", "World"))  
+print(check_ana("Hello", "World"))

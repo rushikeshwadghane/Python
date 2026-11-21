@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Solution`."""
+
 
 
 class Solution:
@@ -10,7 +12,7 @@ class Solution:
                 for k in range(j+1, n):
                     if arr[i] + arr[j] == arr[k]:
                         return True
-        
+
         return False
 
 

@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `combinationSum`."""
+
 from typing import List
 
 def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
@@ -8,13 +10,13 @@ def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
         if remaining == 0:
             res.append(path[:])
             return
-        
+
         if remaining < 0:
             return
-        
+
         for i in range(start, len(candidates)):
             path.append(candidates[i])
-            backtrack(i, path, remaining - candidates[i])  
+            backtrack(i, path, remaining - candidates[i])
             path.pop()
 
     backtrack(0, [], target)

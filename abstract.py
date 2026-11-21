@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `Vehicle`, `Car`, `Bike`."""
+
 from abc import ABC,abstractmethod
 
 
@@ -6,11 +8,10 @@ class Vehicle(ABC): #abstract class
     def start(self):
         pass
 
-
 class Car(Vehicle):
     def start(self):
         print('car starts with key')
-    
+
 class Bike(Vehicle):
     def start(self):
         print('bike start with kick')

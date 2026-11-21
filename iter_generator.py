@@ -1,3 +1,5 @@
+"""Practice example defining or demonstrating `my_denerator`, `read_large_file`."""
+
 
 def my_denerator(n):
     for i in range(n):
